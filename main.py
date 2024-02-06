@@ -7,6 +7,7 @@ root.title("My First GUI with Python")
 label = tk.Label(root, text="Hello World!")
 label.pack()
 
+
 def tmp():
     print("\n[INFO] Button was clicked!")
 
@@ -14,5 +15,13 @@ def tmp():
 button = tk.Button(root, text="Click Me!", command=tmp)
 button.pack()
 
+
+def exit_app():
+    print("\n[INFO] Exiting the application...")
+    exit()
+
+
+exit_button = tk.Button(root, text="Exit", command=exit_app)
+exit_button.pack()
 
 root.mainloop()
