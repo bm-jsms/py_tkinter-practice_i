@@ -4,8 +4,8 @@ root = tk.Tk()
 
 root.title("My First GUI with Python")
 
-label = tk.Label(root, text="Hello World!")
-label.pack()
+label = tk.Label(root, text="Hello World!", font=("Arial", 40), bg="yellow", fg="blue")
+label.pack(fill=tk.X)
 
 
 def tmp():
